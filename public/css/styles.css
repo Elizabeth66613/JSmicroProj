@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Home Page Section */
+#home-products {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Styling for individual products */
+.product {
+    display: inline-block;
+    width: 28%; /* Adjust to fit 3 items per row */
+    margin: 15px 1%; /* Adjusting space between products */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for images inside each product */
+.product img {
+    width: 120px; /* Set image width to a fixed size */
+    height: 120px; /* Set image height to a fixed size */
+    object-fit: cover; /* Ensures the image doesn't get stretched */
+    border-radius: 8px;
+}
+
+/* Product Title */
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+    /* On small screens, stack the products vertically */
+    #home-products .product {
+        width: 90%; /* Stacks the products vertically */
+        margin: 15px auto; /* Center the items */
+    }
+
+    /* Adjust image size for smaller screens */
+    .product img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* About Page Content */
+#about-content {
+    width: 60%; /* Reduced width to make it less wide */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 30px;
+    text-align: center; /* Centers the text inside */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-content h2 {
+    font-size: 36px; /* Increased font size for heading */
+    margin-bottom: 20px;
+}
+
+#about-content p {
+    font-size: 20px; /* Increased font size for paragraphs */
+    line-height: 1.6; /* Added some space between lines for better readability */
+    color: #333; /* Dark text color for better contrast */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Demo Page Styling */
+#demo-page {
+    width: 80%; /* Adjust width to fit content nicely */
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center; /* Center-align the content */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff4b5c; /* Bright color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff2f40; /* Darker shade for hover */
+    transform: scale(1.05); /* Button grow effect */
+}
+
+button:active {
+    background-color: #ff1f2a; /* Even darker shade for active state */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Add some styling for input fields if there are any */
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Input and Textarea focus effect */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #ff4b5c; /* Red border color on focus */
+    outline: none;
+}

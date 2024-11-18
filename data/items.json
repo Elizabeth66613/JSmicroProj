@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Earbuds",
+        "description": "High-quality wireless earbuds with noise cancellation."
+    },
+    {
+        "name": "Charger",
+        "description": "Fast charging USB-C charger for all your devices."
+    },
+    {
+        "name": "Speaker",
+        "description": "Portable Bluetooth speaker with deep bass and clear sound."
+    },
+    {
+        "name": "Phone Case",
+        "description": "Durable phone case with shock absorption."
+    },
+    {
+        "name": "Smartwatch",
+        "description": "Track your fitness with this stylish smartwatch."
+    },
+    {
+        "name": "Laptop Stand",
+        "description": "Adjustable stand for better ergonomics and comfort."
+    }
+]
